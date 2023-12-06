@@ -2,6 +2,8 @@ import Sidebar from './components/Sidebar'
 import Main from './components/Main'
 import Work from './sections/Work'
 import Projects from './sections/Projects'
+import Contacts from './sections/Contacts'
+import Skills from './sections/Skills'
 
 function App() {
 
@@ -11,6 +13,8 @@ function App() {
       <Main />
       <Work />
       <Projects />
+      <Skills />
+      <Contacts />
     </div>
   )
 }
