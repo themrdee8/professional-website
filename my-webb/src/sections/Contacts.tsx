@@ -2,7 +2,9 @@
 function Contacts() {
   return (
     <div id="contact" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
-        <h1 className="py-4 text-3xl font-bold text-center text-[#001b5e] font-[luminari]">Contacts</h1>
+        <div className="sm:text-center pb-2 pl-2 pt-2">
+        <h1 className="inline text-3xl font-bold text-center text-[#001b5e] border-b-4 pr-1">Contacts</h1>
+        </div>
         <form action="https://getform.io/f/0b7f9cb9-7a44-4562-9a15-9e17e2d9b9e3" method="POST" encType="multipart/form-data">
           <div className="grid md:grid-cols-2 gap-4 w-full py-2">
             <div className="flex flex-col">
