@@ -49,7 +49,7 @@ function Contacts() {
             ></textarea>
           </div>
           <button className="bg-[#001b5e] text-gray-100 w-full p-4 rounded-lg mt-4">
-            Submit
+            Let's work together!
           </button>
         </form>
     </div>

@@ -1,9 +1,9 @@
 import {useState} from 'react'
 import {AiOutlineHome, AiOutlineMenu, AiOutlineProject, AiOutlineMail} from 'react-icons/ai'
-import {GrProjects} from 'react-icons/gr'
+/* import {GrProjects} from 'react-icons/gr' */
 import {BsPerson} from 'react-icons/bs'
 import { BiMessageDetail } from "react-icons/bi"
-/* import { FaCode } from "react-icons/fa6" */
+import { FaCode } from "react-icons/fa6"
 
 function Sidebar() {
     const [nav, setNav] = useState(false);
@@ -41,7 +41,7 @@ function Sidebar() {
                         <span className='pl-4'>About</span>
                     </a>
 
-                    <a onClick={handleNav}
+                    {/* <a onClick={handleNav}
                         href="#work" 
                         className='w-[75%] flex justify-center items-center 
                             rounded-full shadow-lg bg-gray-100 shadow-gray-400 
@@ -49,6 +49,16 @@ function Sidebar() {
                     >
                         <GrProjects size={20} />
                         <span className='pl-4'>Work</span>
+                    </a> */}
+
+                    <a onClick={handleNav}
+                        href="#skills" 
+                        className='w-[75%] flex justify-center items-center 
+                            rounded-full shadow-lg bg-gray-100 shadow-gray-400 
+                            m-2 p-2.5 cursor-pointer hover:scale-110 ease-in duration-200'
+                    >
+                        <FaCode size={20} />
+                        <span className='pl-4'>Skills</span>
                     </a>
 
                     <a onClick={handleNav}
@@ -60,16 +70,6 @@ function Sidebar() {
                         <AiOutlineProject size={20} />
                         <span className='pl-4'>Projects</span>
                     </a>
-                    
-                    {/* <a onClick={handleNav}
-                        href="#skills" 
-                        className='w-[75%] flex justify-center items-center 
-                            rounded-full shadow-lg bg-gray-100 shadow-gray-400 
-                            m-2 p-2.5 cursor-pointer hover:scale-110 ease-in duration-200'
-                    >
-                        <FaCode size={20} />
-                        <span className='pl-4'>Skills</span>
-                    </a> */}
                     
                     <a onClick={handleNav}
                         href="#main" 
@@ -106,15 +106,15 @@ function Sidebar() {
                 <a href="#about" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <BiMessageDetail size={20}/>
                 </a>
-                <a href="#work" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                {/* <a href="#work" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <GrProjects size={20}/>
+                </a> */}
+                <a href="#skills" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaCode size={20}/>
                 </a>
                 <a href="#projects" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <AiOutlineProject size={20}/>
                 </a>
-                {/* <a href="#skills" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <FaCode size={20}/>
-                </a> */}
                 <a href="#main" className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <BsPerson size={20}/>
                 </a>

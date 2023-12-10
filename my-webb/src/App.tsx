@@ -1,10 +1,10 @@
 import Sidebar from './components/Sidebar'
 import Main from './components/Main'
-import Work from './sections/Work'
+/* import Work from './sections/Work' */
 import Projects from './sections/Projects'
 import Contacts from './sections/Contacts'
 import About from './sections/About'
-/* import Skills from './sections/Skills' */
+import Skills from './sections/Skills'
 
 function App() {
 
@@ -13,9 +13,9 @@ function App() {
       <Sidebar />
       <Main />
       <About />
-      <Work />
+      {/* <Work /> */}
+      <Skills />
       <Projects />
-      {/* <Skills /> */}
       <Contacts />
     </div>
   )
